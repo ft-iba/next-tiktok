@@ -23,7 +23,7 @@ export default function Home() {
           <HeadInfo
             href={'https://developers.tiktok.com/doc/embed-player'}
             label={'TikTok for developers | Embed Player'}
-            description={'TikTok Embeds と比べて表示要素が少ない\n自動で再生しない'}
+            description={'TikTok Embeds と比べて表示要素が少ない\n自動で再生しない\nSafariでサムネイル表示されない'}
           />
           <CarouselHorizon>
             <TikTokPlayerV1 tiktokIdList={list} />

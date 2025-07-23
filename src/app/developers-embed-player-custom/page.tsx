@@ -1,4 +1,3 @@
-import CarouselHorizon from '@/components/CarouselHorizon';
 import HeadInfo from '@/components/HeadInfo';
 import ScrollAttention from '@/components/ScrollAttention';
 import CarouselTikTok from '@/components/CarouselTikTok';
@@ -23,11 +22,9 @@ export default function Home() {
           <HeadInfo
             href={'https://developers.tiktok.com/doc/embed-player'}
             label={'TikTok for developers | Embed Player'}
-            description={'デフォルトの再生ボタンの上に円形の要素を被せて隠せば独自のボタン配置\n要素が見えたら指定の動画を再生\n再生中以外の動画をクリックしたらそれだけ再生'}
+            description={'動画下部のコントローラーを非表示\nデフォルトの再生ボタンの上に円形の要素を被せて隠せば独自のボタン配置\n要素が見えたら指定の動画を再生\n再生中以外の動画をクリックしたら再生中のものが一時停止して、タップしたものが再生する'}
           />
           <CarouselTikTok postIds={list} />
-          {/* <CarouselHorizon>
-          </CarouselHorizon> */}
         </div>
       </ViewportSection>
     </>
