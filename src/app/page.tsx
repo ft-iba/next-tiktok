@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './page.module.scss';
 
 interface Toc {
@@ -7,15 +8,15 @@ interface Toc {
 
 const tocList: Toc[] = [
   {
-    path: 'tiktok-embeds/',
+    path: 'tiktok-embeds',
     label: 'TikTok Embeds',
   },
   {
-    path: 'developers-embed-player/',
+    path: 'developers-embed-player',
     label: 'TikTok for developers | Embed Player',
   },
   {
-    path: 'developers-embed-player-custom/',
+    path: 'developers-embed-player-custom',
     label: 'TikTok for developers | Embed Player - jsカスタマイズ',
   },
 ]
@@ -30,10 +31,10 @@ export default function Home() {
               className={styles.item}
               key={path}
             >
-              <a
+              <Link
                 className={styles.link}
-                href={`./${path}`}
-              >{ label}</a>
+                href={`/${path}`}
+              >{ label}</Link>
             </li>
           )
         })}
