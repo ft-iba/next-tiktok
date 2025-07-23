@@ -1,0 +1,25 @@
+.headInfo {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.linkLabel {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+  margin-top: 0.8rem;
+}

@@ -8,6 +8,12 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": [
+    "last 2 versions",
+    "android >= 10",
+    "iOS >= 16",
+    "not dead"
+  ],
   "dependencies": {
     "next": "15.4.2",
     "react": "19.1.0",

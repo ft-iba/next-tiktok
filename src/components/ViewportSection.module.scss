@@ -1,0 +1,16 @@
+.viewportSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  &:nth-child(odd) {
+    background-color: #ccc;
+  }
+  &:nth-child(even) {
+    background-color: #bbb;
+  }
+}

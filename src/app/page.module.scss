@@ -1,0 +1,19 @@
+.home {
+  padding: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.link {
+  display: inline-flex;
+  &:hover {
+    text-decoration: none;
+  }
+  &::before {
+    content: '・';
+  }
+}

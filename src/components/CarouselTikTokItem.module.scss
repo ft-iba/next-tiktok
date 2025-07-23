@@ -1,0 +1,41 @@
+.carouselTikTokItem {
+  aspect-ratio: 9 / 16;
+  flex-shrink: 0;
+  position: relative;
+  width: 300px;
+  iframe {
+    aspect-ratio: 9 / 16;
+    // border-radius: 8px;
+    border: none;
+    width: 100%;
+    align-self: center;
+  }
+  [aria-label="Play"] {
+    opacity: 0.2;
+  }
+}
+
+.actionsButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  &[data-type="play"] {
+    &::after {
+      aspect-ratio: 1;
+      background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20800%20800%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xml%3Aspace%3D%22preserve%22%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A2%22%3E%3Cpath%20style%3D%22fill%3Anone%22%20d%3D%22M142.327%20275.741h396.011v396.011H142.327z%22%20transform%3D%22matrix(2.02015%200%200%202.02017%20-286.803%20-556.416)%22%2F%3E%3Ccircle%20cx%3D%224361.54%22%20cy%3D%221220.52%22%20r%3D%22308.919%22%20style%3D%22fill%3Aurl(%23a)%22%20transform%3D%22translate(-3960.83%20-819.883)%22%2F%3E%3Cpath%20d%3D%22m336.189%201118.88%2038.4%2076.8h-76.8l38.4-76.8z%22%20style%3D%22fill%3A%23fff%22%20transform%3D%22matrix(0%203.3854%20-2.8652%200%203743.396%20-737.505)%22%2F%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22a%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%220%22%20gradientUnits%3D%22userSpaceOnUse%22%20gradientTransform%3D%22rotate(90%201724.971%202636.569)%20scale(617.839)%22%3E%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3A%237ac0e8%3Bstop-opacity%3A1%22%2F%3E%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3A%235956ac%3Bstop-opacity%3A1%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E');
+      content: '';
+      display: block;
+      width: 70px;
+    }
+    .carouselTikTokItem:not([data-playing="false"]) & {
+      display: none;
+    }
+  }
+  &[data-type="pause"] {
+    .carouselTikTokItem:not([data-playing="true"]) & {
+      display: none;
+    }
+  }
+}

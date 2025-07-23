@@ -1,0 +1,13 @@
+.tikTokPlayerV1 {
+  aspect-ratio: 9 / 16;
+  flex-shrink: 0;
+  width: 300px;
+  iframe {
+    // aspect-ratio: 16 / 9;
+    aspect-ratio: 9 / 16;
+    // border-radius: 8px;
+    border: none;
+    width: 100%;
+    align-self: center;
+  }
+}
