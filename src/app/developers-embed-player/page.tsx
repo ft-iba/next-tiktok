@@ -12,7 +12,7 @@ const list = [
   '7522812685919079700',
 ];
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <ViewportSection>
