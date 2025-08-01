@@ -19,6 +19,10 @@ const tocList: Toc[] = [
     path: 'developers-embed-player-custom',
     label: 'TikTok for developers | Embed Player - jsカスタマイズ',
   },
+  {
+    path: 'oembed-thumb-developers-embed-player-custom',
+    label: 'oembed でサムネイル取得 - TikTok for developers | Embed Player - jsカスタマイズ',
+  },
 ]
 
 export default function Home() {
