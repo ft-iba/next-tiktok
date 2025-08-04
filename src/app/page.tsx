@@ -23,6 +23,10 @@ const tocList: Toc[] = [
     path: 'oembed-thumb-developers-embed-player-custom',
     label: 'oembed でサムネイル取得 - TikTok for developers | Embed Player - jsカスタマイズ',
   },
+  {
+    path: 'oembed-thumb-developers-embed-player-custom-v2',
+    label: 'oembed でサムネイル取得 - TikTok for developers | Embed Player - jsカスタマイズ V2',
+  },
 ]
 
 export default function Home() {
