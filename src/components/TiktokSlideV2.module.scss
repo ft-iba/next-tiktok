@@ -1,0 +1,71 @@
+.tiktokSlideV2 {
+  aspect-ratio: 9 / 16;
+  flex-shrink: 0;
+  position: relative;
+  width: 260px;
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  iframe {
+    align-self: center;
+    aspect-ratio: 9 / 16;
+    // border-radius: 8px;
+    border: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+  }
+  [aria-label="Play"] {
+    opacity: 0.2;
+  }
+}
+
+.actions {
+  aspect-ratio: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 40px;
+  z-index: 2;
+}
+
+.actionsButton {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 10px #000);
+  position: relative;
+  width: 100%;
+  .tiktokSlideV2[data-playing="true"] & {
+    display: none;
+  }
+  &[data-type="play"] {
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      inset: auto;
+    }
+    &::before {
+      aspect-ratio: 1;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      width: 100%;
+    }
+    &::after {
+      aspect-ratio: 1 / 1.2;
+      background-color: #fff;
+      clip-path: polygon(0 0, 0% 100%, 100% 50%);
+      translate: 2px 0;
+      width: 16px;
+    }
+  }
+  &[data-type="pause"] {
+    display: none;
+  }
+}
